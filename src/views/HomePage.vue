@@ -1,14 +1,21 @@
-:root {
-    color-scheme: light dark;
-    font-family: Roboto, sans-serif;
-    --straw-color: #e4d96f;
-}
+<template>
+    <div class="main-container">
+        <header class="page-header">
+            <h1 class="primary-title">Slow Po </h1><span class="secondary-title">Il portale del lungoticino</span>
+        </header>
+        <main class="main-content">
+            <section class="image">
+                <img src="/img/under_construction.png" alt="sito in costruzione">
+            </section>
+            <section class="message">
+                <p class="message-intro">E, come dice il nostro webmaster:</p>
+                <p class="message-body">"Importante è cominciare!"</p>
+            </section>
+        </main>
+    </div>    
+</template>
 
-body, h1, h2, h3, h4, h5, h6, p, img {
-    margin: 0;
-    padding: 0;
-}
-
+<style scoped>
 .main-container {
     min-height: 100vh;
     margin: 0 auto;
@@ -55,7 +62,6 @@ body, h1, h2, h3, h4, h5, h6, p, img {
 .message {
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .message-intro {
@@ -67,4 +73,5 @@ body, h1, h2, h3, h4, h5, h6, p, img {
 .message-body {
     font-size: 1.5rem;
     font-weight: 900;
-}
+}    
+</style>
